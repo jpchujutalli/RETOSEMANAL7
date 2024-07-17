@@ -1,0 +1,445 @@
+/*color*/
+$primario: #e8505b;
+$secundario: #455a64;
+$negro: #000;
+$blanco: #ffffff;
+$grisClaro: #eceeef;
+
+/*fuente*/
+$fuente_principal: 'Roboto', sans-serif;
+
+*,*::before,*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    
+}
+
+.contenedor {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ***********ENCABEZADO*********** */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.header__logo {
+    width: 300px;
+}
+
+.navegacion {
+    font-family: $fuente_principal;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.navegacion__link {
+    font-size: 20px;
+    font-family: $fuente_principal;
+    font-weight:700;
+    text-decoration: none;
+    color: $negro ;
+}
+
+.boton {
+    background-color: $primario;
+    color: $blanco;
+    border-radius: 10px;
+    padding: 12px 30px;
+    text-align: center;
+}
+
+/* ***********SECCION FORMULARIO*********** */
+
+.formulario__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 50px;
+}
+
+.formulario__contenido {
+    height: 595px;
+    background-color: $primario;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.formulario__titulo {
+    display: block;
+    color: $blanco;
+    font-size: 35px;
+    font-family: $fuente_principal;
+    text-align: center;
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.formulario__buscar {
+    font-family: $fuente_principal;
+    font-size: 16px;
+}
+
+.formulario__campo {
+    color: $blanco;
+    margin-bottom: 16px;
+}
+
+.formulario__label {
+    
+    display: block;
+    margin: 10px 0;
+}
+
+.formulario__input {
+    width: 100%;
+    height: 45px;
+    padding: 15px;
+}
+
+.formulario__boton {
+    border-radius: 10px;
+    background-color: $secundario;
+    font-size: 20px;
+    font-family: $fuente_principal;
+    color: $blanco;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    padding: 12px 30px;
+    margin-top: 20px ;
+    width: 100%;
+}
+
+.formulario__imagen {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* ***********SECCION PASOS*********** */
+
+.pasos {
+    margin-top: 50px;
+    background-color: $primario;
+}
+
+.pasos__contenido {
+    padding-top: 50px;
+}
+
+.pasos__titulo {
+    display: block;
+    font-size: 36px;
+    font-family: $fuente_principal;
+    text-align: center;
+    color: $blanco;
+    margin-bottom: 50px;
+}
+
+.pasos__titulo--descripcion {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    font-family: $fuente_principal;
+    color: $blanco;
+}
+
+.pasos__grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.pasos__imagen {
+    width: 400px;
+}
+
+/* ***********SECCION TESTIMONIALES*********** */
+
+
+.testimonio {
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.testimonio__titulo {
+    text-align: center;
+    font-size: 36px;
+    font-family: $fuente_principal;
+    font-weight: 700;
+}
+
+.testimonio__grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 224px);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.uno {
+    border-radius: 10px;
+    background-color: $secundario;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 20px;
+}
+
+.dos {
+    border-radius: 10px;
+    background-color: $secundario;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 20px;
+}
+
+.tres {
+    border-radius: 10px;
+    background-color: $secundario;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 20px;
+}
+
+.cuatro {
+    border-radius: 10px;
+    background-color: $secundario;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 20px;
+}
+
+.cinco {
+    border-radius: 10px;
+    background-color: $secundario;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 20px;
+}
+
+.testimonio__header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.testimonio__img {
+    border-radius: 50%;
+    max-width: 100px;
+    min-width: 50px;
+    max-height: 100px;
+    min-height: 50px;
+}
+
+.testimonio__autor {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: $fuente_principal;
+    color: $blanco;
+    padding: 10px 0;
+}
+
+.testimonio__informacion {
+    margin-top: 20px;
+    padding-left: 30px;
+    font-family: $fuente_principal;
+    font-size: 20px;
+    color:$blanco;
+    line-height: 30px;
+}
+
+/* ***********SECCION RESTAURANTES*********** */
+
+.restaurantes {
+    background-color: $grisClaro;
+}
+
+.restaurantes__contenedor {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.restaurantes__titulo {
+    font-size: 36px;
+    font-family: $fuente_principal;
+    color: $secundario;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.restaurantes__grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.restaurant {
+    border-radius: 10px;
+    background-color: $blanco;
+    box-shadow: $secundario 0px 0px 26px -15px;
+    padding: 40px;
+}
+
+.restaurant__grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.restaurant__contenido {
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurant__img {
+    width: 200px;
+}
+
+.restaurant__nombre {
+    font-size: 24px;
+    font-family: $fuente_principal;
+    font-weight: 700;
+    color: $primario;
+    margin: 10px 0;
+}
+
+.restaurant__descripcion {
+    font-size: 16px;
+    font-family: $fuente_principal;
+    line-height: 25px;
+    margin: 5px 0;
+}
+
+/* ***********SECCION REPARTIDORES*********** */
+
+.repartidores__titulo {
+    text-align: center;
+    padding-top: 50px;
+    color: $secundario;
+    font-size: 36px;
+    font-family: $fuente_principal;
+    margin-bottom: 50px;
+}
+
+.repartidores__grid {
+    width: 1200px ;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.repartidores__imagen {
+    width: 100%;
+}
+
+.repartidores__contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.repartidores__texto {
+    font-size: 20px;
+    font-family: $fuente_principal;
+    line-height: 30px;
+    color: $secundario;
+}
+
+.repartidores__boton {
+    display: block;
+    align-items: flex-start;
+    padding: 12px 30px;
+    background-color: $primario;
+    color: $blanco;
+    font-size: 20px;
+    width: 218px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+/* ***********FOOTER*********** */
+
+.footer {
+    background-color: $secundario;
+}
+
+.footer__grid {
+    padding: 50px 0;
+    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.footer__widget {
+    color: $blanco;
+    font-size: 28px;
+    font-family: $fuente_principal;
+}
+
+.footer__texto {
+    font-size: 20px;
+    line-height: 35px;
+    margin-top: 20px;
+    padding-right: 20px;
+}
+
+.footer__nav {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+    margin-top: 20px;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: $blanco;
+    font-family: $fuente_principal;
+}
+
+.footer__copy {
+    width: 100%;
+    background-color: $primario;
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: $blanco;
+    font-family: $fuente_principal;
+}
+
